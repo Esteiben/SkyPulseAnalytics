@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined.filled {
+  font-variation-settings: 'FILL' 1;
+}
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+.shadow-elevation-1 { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); }
+.shadow-elevation-2 { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); }
+
+.bg-pattern-map {
+  background-color: #f3f3f3;
+  background-image: radial-gradient(#e2e2e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.map-container {
+  background-color: #1a1c1c;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 60%),
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+}
+
+.toggle-checkbox:checked { right: 0; border-color: #c51c39; }
+.toggle-checkbox:checked + .toggle-label { background-color: #c51c39; }
